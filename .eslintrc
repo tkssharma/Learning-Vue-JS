@@ -1,0 +1,11 @@
+{
+  "root": true,
+  "parser": "babel-eslint",
+  "extends": "standard",
+  "rules": {
+    "max-len": [1, 70, 2, {"ignoreComments": true}],
+    "arrow-parens": 0,
+    "generator-star-spacing": 0,
+    "no-unused-vars": 0
+  }
+}
