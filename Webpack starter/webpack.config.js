@@ -66,7 +66,7 @@ module.exports = {
   },
   devtool: '#eval-source-map',
   plugins: [
-    new ExtractTextPlugin({ 
+    new ExtractTextPlugin({
       filename:"css/bundle.css"
     }),
     new HtmlWebpackPlugin({
