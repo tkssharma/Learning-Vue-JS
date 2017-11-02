@@ -1,0 +1,36 @@
+
+<html>
+
+  <head>
+  </head>
+
+  <body>
+    <div id="app">
+      <app-nav></app-nav>
+      <app-view>
+        <app-sidebar></app-sidebar>
+        <app-content></app-content>
+      </app-view>
+    </div>
+  </body>
+
+  </html>
+
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/vue/1.0.12/vue.js"></script>
+
+  <script>
+   new Vue({
+    el: '#app',
+    data: {
+     someDynamicCondition: true,
+     message: 'Hello world'
+    },
+    methods: {
+     change: function (e) {
+      console.log(e.target.value)
+     }
+    }
+   });
+
+  </script>
+

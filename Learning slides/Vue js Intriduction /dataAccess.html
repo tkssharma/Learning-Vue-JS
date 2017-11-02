@@ -1,0 +1,35 @@
+<html>
+
+  <head>
+  </head>
+
+  <body>
+    <div id="app-4">
+      <ol>
+        <li v-for="todo in todos">
+          {{ todo.text }}
+        </li>
+      </ol>
+    </div>
+  </body>
+  </html>
+
+
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/vue/1.0.12/vue.js"></script>
+  <script>
+    var app4 = new Vue({
+     el: '#app-4',
+     data: {
+       todos: [
+         { text: 'Learn JavaScript' },
+         { text: 'Learn Vue' },
+         { text: 'Build something awesome' }
+       ]
+     }
+   })
+  </script>
+
+
+
+
+
